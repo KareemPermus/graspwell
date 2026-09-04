@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: #64748B;
+  --color-accent: #F97316;
+  --color-brand: #dc2626;
+  --gradient-header-primary: linear-gradient(135deg, #dc2626 0%, #991b1b 100%);
+  --gradient-panel-dark: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+  --gradient-soft-surface: linear-gradient(135deg, #fef2f2 0%, #fff7ed 100%);
+}
+
+* { font-family: 'Inter', system-ui, sans-serif; }
+
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-thumb { background: #d4d4d8; border-radius: 4px; }

@@ -1,0 +1,100 @@
+[
+  {
+    "auth_required": false,
+    "method": "GET",
+    "path": "/api/health",
+    "response_shape": {
+      "status": "string"
+    },
+    "sample_body": null,
+    "sample_params": {},
+    "success_status": 200
+  },
+  {
+    "auth_required": false,
+    "method": "GET",
+    "path": "/api/dashboard",
+    "response_shape": {
+      "recent_contacts": "array",
+      "tasks_due_today": "int",
+      "total_contacts": "int",
+      "total_tasks": "int",
+      "upcoming_tasks": "array"
+    },
+    "sample_body": null,
+    "sample_params": {},
+    "success_status": 200
+  },
+  {
+    "auth_required": false,
+    "method": "GET",
+    "path": "/api/contacts",
+    "response_shape": "array",
+    "sample_body": null,
+    "sample_params": {},
+    "success_status": 200
+  },
+  {
+    "auth_required": false,
+    "method": "GET",
+    "path": "/api/contacts/:id",
+    "response_shape": {
+      "company": "string",
+      "created_at": "string",
+      "email": "string",
+      "first_name": "string",
+      "id": "int",
+      "last_name": "string",
+      "notes": "string",
+      "phone": "string",
+      "updated_at": "string"
+    },
+    "sample_body": null,
+    "sample_params": {
+      "id": 1
+    },
+    "success_status": 200
+  },
+  {
+    "auth_required": false,
+    "method": "GET",
+    "path": "/api/tasks",
+    "response_shape": "array",
+    "sample_body": null,
+    "sample_params": {},
+    "success_status": 200
+  },
+  {
+    "auth_required": false,
+    "method": "GET",
+    "path": "/api/tasks/:id",
+    "response_shape": {
+      "contact_id": "int",
+      "contact_name": "string",
+      "created_at": "string",
+      "description": "string",
+      "due_date": "string",
+      "id": "int",
+      "priority": "string",
+      "status": "string",
+      "title": "string",
+      "updated_at": "string"
+    },
+    "sample_body": null,
+    "sample_params": {
+      "id": 1
+    },
+    "success_status": 200
+  },
+  {
+    "auth_required": false,
+    "method": "GET",
+    "path": "/api/contacts/:id/activities",
+    "response_shape": "array",
+    "sample_body": null,
+    "sample_params": {
+      "id": 1
+    },
+    "success_status": 200
+  }
+]
